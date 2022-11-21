@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Calculator {
+public class Main {
     public static void main(String[] args) {
         System.out.println("Choose the opertion:");
         System.out.println("\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n5.No operation");
@@ -24,9 +24,11 @@ public class Calculator {
                 System.out.println("Multiplication is" + Multiplication);
                 break;
             case 4:
-                float Division = First + Second;
+                float Division = First / Second;
                 System.out.println("Division is" + Division);
                 break;
+            case 5:
+                System.out.println("Nothing to do");
 
         }
     }
