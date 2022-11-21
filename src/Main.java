@@ -15,6 +15,11 @@ public class Calculator {
                 float Addition = First + Second;
                 System.out.println("Addition is" + Addition);
                 break;
+            case 2:
+                float Subtraction = First + Second;
+                System.out.println("Subtraction is" + Subtraction);
+                break;
+
         }
     }
 }
