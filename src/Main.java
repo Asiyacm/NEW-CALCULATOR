@@ -2,12 +2,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         int option;
-        float First;
-        float Second;
+        int First;
+        int Second;
 
         do {
             System.out.println("Choose the opertion:");
-            System.out.println("\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n5.No operation");
+            System.out.println("\n1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n5.Exit");
             Scanner xy = new Scanner(System.in);
             option = xy.nextInt();
             switch (option) {
@@ -17,8 +17,8 @@ public class Main {
                     First = xy.nextInt();
                     System.out.println("Enter Second Number");
                     Second = xy.nextInt();
-                    float Addition = First + Second;
-                    System.out.println("Addition is" + Addition);
+                    int Addition = First + Second;
+                    System.out.println("Addition is :" + Addition);
                     break;
                 case 2:
 
@@ -26,8 +26,8 @@ public class Main {
                     First = xy.nextInt();
                     System.out.println("Enter Second Number");
                     Second = xy.nextInt();
-                    float Subtraction = First - Second;
-                    System.out.println("Subtraction is" + Subtraction);
+                    int Subtraction = First - Second;
+                    System.out.println("Subtraction is :" + Subtraction);
                     break;
                 case 3:
 
@@ -35,8 +35,8 @@ public class Main {
                     First = xy.nextInt();
                     System.out.println("Enter Second Number");
                     Second = xy.nextInt();
-                    float Multiplication = First * Second;
-                    System.out.println("Multiplication is" + Multiplication);
+                    int Multiplication = First * Second;
+                    System.out.println("Multiplication is :" + Multiplication);
                     break;
                 case 4:
 
@@ -44,14 +44,23 @@ public class Main {
                     First = xy.nextInt();
                     System.out.println("Enter Second Number");
                     Second = xy.nextInt();
-                    float Division = First / Second;
-                    System.out.println("Division is" + Division);
+                    try {
+                        int Division = First / Second;
+                        System.out.println("Division is :" + Division);
+                    }
+                    catch(ArithmeticException e) {
+
+                        System.out.println(e);
+                    }
+
                     break;
                 case 5:
-                    System.out.println("Nothing to do");
+
+                    System.out.println("Exit");
                     break;
                 default:
                     System.out.println("Invalid entry");
+                    break;
             }
         }while (option != 5);
     }
