@@ -19,6 +19,10 @@ public class Calculator {
                 float Subtraction = First + Second;
                 System.out.println("Subtraction is" + Subtraction);
                 break;
+            case 3:
+                float Multiplication = First + Second;
+                System.out.println("Multiplication is" + Multiplication);
+                break;
 
         }
     }
