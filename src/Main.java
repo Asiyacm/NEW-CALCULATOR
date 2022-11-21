@@ -23,6 +23,10 @@ public class Calculator {
                 float Multiplication = First + Second;
                 System.out.println("Multiplication is" + Multiplication);
                 break;
+            case 4:
+                float Division = First + Second;
+                System.out.println("Division is" + Division);
+                break;
 
         }
     }
