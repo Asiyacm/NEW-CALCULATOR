@@ -10,5 +10,11 @@ public class Calculator {
         float First = xy.nextInt();
         System.out.println("Enter Second Number");
         float Second = xy.nextInt();
+        switch (option) {
+            case 1:
+                float Addition = First + Second;
+                System.out.println("Addition is" + Addition);
+                break;
+        }
     }
 }
